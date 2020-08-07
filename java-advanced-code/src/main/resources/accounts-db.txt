@@ -1,0 +1,5 @@
+alex, 500
+andreea, 800
+cristi, 20
+test, 400
+paul, 200

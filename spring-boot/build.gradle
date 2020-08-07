@@ -1,0 +1,46 @@
+buildscript {
+    ext {
+        lombokVersion = '1.18.6'
+    }
+    repositories {
+        jcenter()
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id 'java'
+    // Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that can you can "just run".
+    id 'org.springframework.boot' version '2.2.0.RELEASE'
+    // gradle plugin that provides Maven-like dependency management functionality
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+}
+
+java {
+    group 'com.bucur'
+    version '1.0-SNAPSHOT'
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // core starter including auto-configuration support, logging and YAML
+    implementation 'org.springframework.boot:spring-boot-starter'
+
+    // test
+
+    // starter for testing with junit, hamcrest and mockito
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // lombok
+
+    implementation "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor"org.projectlombok:lombok:${lombokVersion}"
+
+    testImplementation "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor"org.projectlombok:lombok:${lombokVersion}"
+}

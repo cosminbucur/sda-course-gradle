@@ -1,0 +1,4 @@
+{
+  "switzerland" : [ "zurich", "bern" ],
+  "romania" : [ "bucharest", "cluj" ]
+}

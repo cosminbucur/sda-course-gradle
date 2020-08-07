@@ -1,0 +1,37 @@
+/* simple selectors */
+
+h1 {
+    color: blue;
+}
+
+/* element selector */
+p {
+    color: red;
+}
+
+/* id selector */
+#paragraph1 {
+    color: green;
+}
+
+/* class selector */
+.center {
+  text-align: center;
+  color: red;
+}
+
+/* only <p> elements with class="center" */
+p.center {
+  text-align: center;
+  color: green;
+}
+
+
+
+/* combinator selectors */
+
+/* pseudo-class selectors */
+
+/* pseudo-elements selectors */
+
+/* attribute selectors */

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<p>Imagine after clicking the "Save" button, the form-data will be sent to the backend.</p>
+
+<form action="">
+
+    <fieldset>
+        <legend>Account data:</legend>
+
+        <!--  email  -->
+        <label for="email">Email:</label><br>
+        <input id="email" name="email" required type="email" value="jonsnow@gmail.com"><br>
+        <br>
+
+        <!--  button  -->
+        <button onclick="alert('Valid email')" type="button">Check availability</button>
+        <br><br>
+
+        <!--  password  -->
+        <label for="password">Password:</label><br>
+        <input id="password" name="password" required type="password" value="secret"><br>
+    </fieldset>
+    <br>
+
+    <!--  label  -->
+    <label for="name">Name:</label><br>
+    <input id="name" name="name" type="text" value="Jon Snow"><br>
+    <br>
+
+    <!--  text input  -->
+    <label for="phone">Phone:</label><br>
+    <input id="phone" name="phone" pattern="\+[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}" type="tel" value="+40722333444"><br>
+    <br>
+
+    <!--  checkbox  -->
+    <label>Favorite weapons:</label><br>
+
+    <input id="weapon1" name="weapon1" type="checkbox" value="sword">
+    <label for="weapon1"> Sword</label><br>
+
+    <input id="weapon2" name="weapon2" type="checkbox" value="longbow">
+    <label for="weapon2"> Long bow</label><br>
+
+    <input id="weapon3" name="weapon3" type="checkbox" value="dragon-glass">
+    <label for="weapon3"> Dragon glass</label><br>
+    <br>
+
+    <!--  radio button  -->
+    <label>Gender:</label><br>
+
+    <input id="male" name="gender" type="radio" value="male">
+    <label for="male">Male</label><br>
+
+    <input id="female" name="gender" type="radio" value="female">
+    <label for="female">Female</label><br>
+
+    <input id="confused" name="gender" type="radio" value="confused">
+    <label for="confused">Confused</label><br>
+    <br>
+
+    <!--  select  -->
+    <label for="orders">Order:</label><br>
+    <select id="orders" name="orders">
+        <option value="king">Night's watch</option>
+        <option value="creepy">Creepy peasants</option>
+        <option value="watch">King's guard</option>
+    </select><br>
+    <br>
+
+    <!--  time  -->
+    <label for="shift-start">Select shift start time:</label><br>
+    <input id="shift-start" name="shift-start" type="time"><br>
+    <br>
+
+    <!--  date - format: yyyy-MM-dd  -->
+    <label for="birthday">Birthday:</label><br>
+    <input id="birthday" name="birthday" type="date" value="1975-07-30"><br>
+    <br>
+
+    <!-- text area  -->
+    <label for="wisdom">Words of wisdom:</label><br>
+    <textarea cols="40" id="wisdom" name="wisdom" rows="5">
+    Valar morgulis (All men must die)
+    </textarea><br>
+    <br>
+
+    <!--  color picker  -->
+    <label for="banner-color">Banner color:</label>
+    <input id="banner-color" name="banner-color" type="color"><br>
+    <br>
+
+    <!--  file  -->
+    <label for="profile-photo">Select a profile photo:</label>
+    <input id="profile-photo" name="profile-photo" type="file"><br>
+    <br>
+
+    <!--  url  -->
+    <label for="profile">Add your wiki profile:</label>
+    <input id="profile" name="profile" type="url" value="https://en.wikipedia.org/wiki/Jon_Snow_(character)"><br>
+    <br>
+
+    <!--  reset button  -->
+    <input type="reset">
+
+    <!-- submit button -->
+    <input type="submit" value="Save">
+</form>
+
+</body>
+</html>

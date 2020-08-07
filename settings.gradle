@@ -1,0 +1,33 @@
+rootProject.name = 'sda-course-gradle'
+include 'fundamentals'
+include 'testing'
+include 'java-advanced'
+include 'design-patterns'
+include 'java-advanced-code'
+
+include 'sql'
+include 'nosql'
+include 'jdbc'
+include 'hibernate'
+include 'java-fx'
+include 'networking'
+include 'html'
+
+include 'spring-core'
+include 'spring-mvc'
+include 'spring-mvc-hibernate'
+
+// spring boot 2
+include 'spring-boot'
+include 'spring-data-jpa'
+include 'spring-boot-jsp'
+include 'spring-thymeleaf'
+include 'spring-security'
+include 'spring-boot-rest'
+include 'spring-security'
+
+include 'testing-advanced'
+
+// old modules
+include 'jvm'
+
