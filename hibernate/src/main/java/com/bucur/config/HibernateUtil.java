@@ -12,6 +12,8 @@ import com.bucur.associations.one_to_one.Account;
 import com.bucur.associations.one_to_one.Employee;
 import com.bucur.audit.customer.Customer;
 import com.bucur.audit.history.CustomerHistory;
+import com.bucur.criteria.Country;
+import com.bucur.criteria.Traveler;
 import com.bucur.crud.Person;
 import com.bucur.queries.hql.Stock;
 import com.bucur.queries.native_query.Trader;
@@ -96,6 +98,10 @@ public class HibernateUtil {
         // hql
         configuration.addAnnotatedClass(Stock.class);
         configuration.addAnnotatedClass(Trader.class);
+
+        // criteria
+        configuration.addAnnotatedClass(Traveler.class);
+        configuration.addAnnotatedClass(Country.class);
 
         return configuration;
     }
